@@ -11,6 +11,7 @@ test_that("Numbers are correct", {
 context("testing NMB value")
 test_that("NMB is correct", {
   expect_equal(calculate_NMB(5,7),-2)
+  expect_error(calculate_NMB(),"missing argument")
 })
     
   

@@ -10,6 +10,9 @@ adds.one <- function(x){
 }
 
 calculate_NMB <- function(benefits,costs){
+  if(!hasArg(benefits) | !hasArg(costs)){
+    stop("missing argument")
+  }
   retval <- benefits-costs
   return(retval)
 }
